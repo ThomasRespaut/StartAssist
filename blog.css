@@ -1,0 +1,105 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: clip; /* Ajouter cette ligne pour masquer le défilement horizontal */
+}
+
+ul {
+    list-style: none;
+    padding: 0; /* Facultatif : Pour enlever l'espacement par défaut des puces */
+    margin: 0; /* Facultatif : Pour enlever la marge par défaut des puces */
+}
+
+:root {
+    --pink: #f08108;
+    --blue1: #00227d;
+    --blue2: #203f91;
+    --blue3: #243d90;
+    --orange1: #f08108;
+    --orange2: #ff9900;
+    --orange3: #FE9533;
+    --white1: #FFF;
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Roboto', sans-serif;
+    --font3: 'Montserrat', sans-serif;
+    --font4: 'Abril FatFace', cursive;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Images/background-blog.png); /* Remplacer background-color par background-image */
+    background-size: cover;
+    height: 300vh; /* Définit la hauteur à 100% de la vue (viewport) */
+    width: 100vw;
+    font-family : var(--font1); 
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    color: var(--orange3);
+    background-color: var(--blue2);
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 500px;
+}
+
+.container div{
+    border : 1rem solid var(--blue1); 
+    border-radius : 2rem; 
+    margin-bottom : 3rem; 
+    min-width : 400px; 
+    margin-right : 2rem;
+}
+
+.container h2{
+    padding-top : 1rem; 
+    background-color : var(--blue3); 
+    color : var(--orange1); 
+    text-align : center; 
+}
+
+    .container li {
+        text-align: center;
+    }
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Ajoutez d'autres styles selon vos besoins */

@@ -1,0 +1,210 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: clip; /* Ajouter cette ligne pour masquer le défilement horizontal */
+    font-weight: 300;
+    font-family: var(--font1);
+    color: white;
+}
+
+
+:root {
+    --pink: #f08108;
+    --blue1: #00227d;
+    --blue2: #203f91;
+    --blue3: #243d90;
+    --orange1: #f08108;
+    --orange2: #ff9900;
+    --orange3: #FE9533;
+    --white1: #FFF;
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Roboto', sans-serif;
+    --font3: 'Montserrat', sans-serif;
+    --font4: 'Abril FatFace', cursive;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(Images/background-login.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: clip; /* Ajouter cette ligne pour masquer le défilement horizontal */
+    font-family: var(--font1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+}
+
+    .container h1 {
+        padding-top: 30vh;
+        text-align: center;
+        color: var(--white1);
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .container h2 {
+        padding-top: 5vh;
+        text-align: center;
+        color: var(--white1);
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+.form-container {
+    background: none;
+    border: none;
+    padding-top: 3vh;
+}
+
+.hidden-label {
+    display: none;
+}
+
+.form-container text {
+    padding: 0;
+    margin: 0;
+    height: 25vh; /* Augmenter la hauteur à 30vh (30% de la hauteur de la vue) */
+    font-size: 14px !important;
+    width: 100%;
+    color: white;
+}
+
+.form-control {
+    color: var(--white1);
+    background-color: royalblue;
+    padding: 1rem 0 1rem 2rem;
+    text-align: left;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    width: 20vw;
+    border: none;
+    box-shadow: #00227d 2px 2px 2px 2px inset;
+}
+
+.form-name{
+    display : flex; 
+    flex-direction : row; 
+}
+
+.form-control2 {
+    color: var(--white1);
+    background-color: royalblue;
+    padding: 1rem 0 1rem 2rem;
+    text-align: left;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    width: 10vw;
+    border: none;
+    box-shadow: #00227d 2px 2px 2px 2px inset;
+}
+
+
+.form-mid {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7rem;
+    align-items: center;
+    margin-left: 1vw;
+    justify-content: space-between;
+    width: 17vw;
+    color: white;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.souvenir {
+    display: flex;
+    flex-direction: row;
+}
+
+    .souvenir i {
+        transform: translateY(10%);
+        padding-right: 0.2rem;
+    }
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .login-btn button {
+        color: var(--white1);
+        padding: 0.6rem 0;
+        background-color: var(--orange3);
+        border: solid 3px var(--orange3);
+        text-align: center;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        width: 15vw;
+    }
+
+    .login-btn .sign-in {
+        color: var(--orange3);
+        border: solid 3px var(--orange3);
+        padding: 0.6rem 0;
+        background-color: var(--blue1);
+        text-align: center;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        width: 15vw;
+    }
+
+.toggle-password {
+    position: absolute;
+    right: 41%;
+    top: 65%;
+    z-index: 10;
+}
+/* Applique le style du placeholder dans tous les champs de formulaire */
+::placeholder {
+    color: white;
+}
+
+@media all and (max-width : 860px) {
+
+    .form-control {
+        width: 80vw;
+    }
+
+    .form-control2 {
+        width: 40vw;
+    }
+
+    .login-btn button {
+        width: 60vw;
+    }
+
+    .login-btn .sign-in {
+        width: 60vw;
+    }
+
+    .form-mid {
+        width: 69vw;
+        margin-left: 2rem;
+    }
+
+    .toggle-password {
+        position: absolute;
+        right: 13%;
+        top: 78%;
+        z-index: 10;
+    }
+}
